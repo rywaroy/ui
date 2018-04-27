@@ -1,0 +1,84 @@
+.yg-pagination {
+  display: inline-block;
+  vertical-align: middle;
+  height: 32px;
+}
+
+.yg-pager {
+  float: left;
+}
+
+.yg-pager__item {
+  float: left;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  background: #f5f5f5;
+  text-align: center;
+  line-height: 32px;
+  color: #666;
+  font-size: 14px;
+  font-family: Arial;
+  border-radius: 4px;
+  transition: all .3s;
+  margin-right: 8px;
+
+  &:hover {
+    background: @brand-primary;
+    color: #fff;
+  }
+}
+
+.yg-pager__item--active {
+  &:extend(.yg-pager__item);
+  background: @brand-primary;
+  color: #fff;
+}
+
+.yg-pager__item--disable {
+  &:extend(.yg-pager__item);
+  cursor: no-drop;
+}
+
+.yg-pager__jump {
+  float: left;
+  width: 104px;
+  height: 32px;
+}
+
+.yg-pager__jump__btn {
+  float: right;
+  width: 56px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  cursor: pointer;
+  font-size: 14px;
+  color:'#666';
+  margin-top: 4px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  transition: all .3s;
+  &:hover {
+    background: @brand-primary;
+    color: #fff;
+  }
+}
+
+.yg-pager__input {
+  float: left;
+  margin-right: 5px;
+  width: 40px;
+  height: 32px;
+  border: 1px solid #d9d9d9;
+  padding: 0;
+  border-radius: 4px;
+  text-align: center;
+  outline: none; 
+  font-size: 14px;
+  color: #666;
+
+  &:focus {
+    border-color: @brand-primary;
+  }
+}

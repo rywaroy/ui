@@ -1,0 +1,21 @@
+.menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 240px;
+  height: 100%;
+  padding-left: 30px;
+  padding-top: 50px;
+}
+
+.nav-item a {
+  display: block;
+  height: 40px;
+  color: #444;
+  line-height: 40px;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 400;
+}
