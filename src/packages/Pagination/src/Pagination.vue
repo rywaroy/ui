@@ -23,7 +23,7 @@
 </template>
 <script>
 export default {
-  name: 'yg-pagination',
+  name: 'YgPagination',
   props: {
     currentPage: Number,
     pageCount: Number,
@@ -94,7 +94,7 @@ export default {
           array.push(i);
         }
       } else {
-        for (let i = 2; i < pageCount; i += 1) {
+        for (let i = 2; i < pageCount; i++) {
           array.push(i);
         }
       }

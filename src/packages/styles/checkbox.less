@@ -1,0 +1,71 @@
+.yg-checkbox {
+  display: inline-block;
+  color: #656565;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.yg-checkbox.is-checked {
+  color: @brand-primary;
+}
+
+.yg-checkbox.is-disabled {
+  color: #cbcbcb;
+  cursor: no-drop;
+}
+
+.yg-checkbox__input {
+  display: inline-block;
+  position: relative;
+  border: 1px solid #d9d9d9;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+.yg-checkbox.is-checked .yg-checkbox__input {
+  border-color: @brand-primary;
+  background: @brand-primary;
+}
+
+.yg-checkbox__input::after {
+  content: "";
+  border: 1px solid #fff;
+  border-left: 0;
+  border-top: 0;
+  height: 7px;
+  left: 4px;
+  position: absolute;
+  top: 1px;
+  transform: rotate(45deg) scaleY(0);
+  width: 3px;
+  transition: transform .15s cubic-bezier(.71, -.46, .88, .6) 50ms;
+}
+
+.yg-checkbox.is-checked .yg-checkbox__input::after {
+  transform: rotate(45deg) scaleY(1);
+}
+
+.yg-checkbox.is-disabled .yg-checkbox__input {
+  border-color: #e5e5e5;
+  background: #f4f4f4;
+}
+
+.yg-checkbox.is-disabled.is-checked .yg-checkbox__input::after {
+  border-color: #dadada;
+  transform: rotate(45deg) scaleY(1);
+}
+
+.yg-checkbox:not(.is-disable) .yg-checkbox__input:hover {
+  border-color: @brand-primary;
+}
+
+.yg-checkbox__label {
+  font-size: 12px;
+  padding-left: 4px;
+  line-height: 16px;
+  vertical-align: middle;
+}

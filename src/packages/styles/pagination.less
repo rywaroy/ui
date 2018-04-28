@@ -18,9 +18,9 @@
   line-height: 32px;
   color: #666;
   font-size: 14px;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   border-radius: 4px;
-  transition: all .3s;
+  transition: all 0.3s;
   margin-right: 8px;
 
   &:hover {
@@ -31,12 +31,14 @@
 
 .yg-pager__item--active {
   &:extend(.yg-pager__item);
+
   background: @brand-primary;
   color: #fff;
 }
 
 .yg-pager__item--disable {
   &:extend(.yg-pager__item);
+
   cursor: no-drop;
 }
 
@@ -54,11 +56,12 @@
   line-height: 24px;
   cursor: pointer;
   font-size: 14px;
-  color:'#666';
+  color: #666;
   margin-top: 4px;
   background: #f5f5f5;
   border-radius: 4px;
-  transition: all .3s;
+  transition: all 0.3s;
+
   &:hover {
     background: @brand-primary;
     color: #fff;
@@ -74,7 +77,7 @@
   padding: 0;
   border-radius: 4px;
   text-align: center;
-  outline: none; 
+  outline: none;
   font-size: 14px;
   color: #666;
 

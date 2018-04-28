@@ -44,6 +44,11 @@ module.exports = {
       optionalDependencies: ['test/unit/index.js']
     }],
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'max-len': 0,
+    'no-plusplus': 0,
+    'vue/no-side-effects-in-computed-properties': 'off',
+    'no-underscore-dangle': 0,
+    'no-else-return': 0
   }
 }
