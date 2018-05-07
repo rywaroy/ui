@@ -1,30 +1,31 @@
 # ui
 
-> A Vue.js project
+下载依赖
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
+```bash
+npm install 
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+启动
+
+```bash
+npm run dev
+```
+
+打包组件的压缩js文件(在/lib文件夹下)
+
+```bash
+npm run build:comp
+```
+
+打包组件的样式文件(在/lib/styles文件夹下)
+
+```bash
+npm run build:style
+```
+
+## 组件
+
+* [pagination](./src/packages/Pagination)
+* [radio](./src/packages/Radio)
+* [checkbox](./src/packages/Checkbox)
