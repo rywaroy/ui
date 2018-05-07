@@ -1,5 +1,5 @@
 <template>
-  <div :class="['yg-checkbox', {'is-disabled': this.disabled}, {'is-checked': this.isCheck}]" @click="check()">
+  <div :class="['yg-checkbox', {'is-disabled': this.disabled}, {'is-checked': this.isCheck}, {'is-indeterminate': this.indeterminate}]" @click="check()">
     <span class="yg-checkbox__input"></span>
     <span class="yg-checkbox__label"><slot></slot></span>
   </div>
@@ -15,6 +15,10 @@ export default {
     value: Boolean,
     label: [String, Number],
     disabled: {
+      type: Boolean,
+      default: false,
+    },
+    indeterminate: {
       type: Boolean,
       default: false,
     },

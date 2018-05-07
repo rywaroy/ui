@@ -7,7 +7,8 @@
   white-space: nowrap;
 }
 
-.yg-checkbox.is-checked {
+.yg-checkbox.is-checked,
+.yg-checkbox.is-indeterminate {
   color: @brand-primary;
 }
 
@@ -26,7 +27,8 @@
   vertical-align: middle;
 }
 
-.yg-checkbox.is-checked .yg-checkbox__input {
+.yg-checkbox.is-checked .yg-checkbox__input,
+.yg-checkbox.is-indeterminate .yg-checkbox__input {
   border-color: @brand-primary;
   background: @brand-primary;
 }
@@ -41,11 +43,23 @@
   position: absolute;
   top: 1px;
   transform: rotate(45deg) scaleY(0);
-  width: 3px;
-  transition: transform .15s cubic-bezier(.71, -.46, .88, .6) 50ms;
+}
+
+.yg-checkbox.is-indeterminate .yg-checkbox__input::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  height: 2px;
+  transform: scale(.5);
+  left: 0;
+  right: 0;
+  top: 5px;
 }
 
 .yg-checkbox.is-checked .yg-checkbox__input::after {
+  width: 3px;
+  transition: transform .05s cubic-bezier(.71, -.46, .88, .6) 50ms;
   transform: rotate(45deg) scaleY(1);
 }
 
