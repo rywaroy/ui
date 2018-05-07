@@ -27,6 +27,10 @@ export default {
   props: {
     currentPage: Number,
     pageCount: Number,
+    maxPage: {
+      type: Number,
+      default: 100,
+    },
   },
   data() {
     return {
@@ -44,7 +48,7 @@ export default {
       }
     },
     jump() {
-      if (isNaN(this.targetPage) || this.targetPage > this.pageCount || this.targetPage < 1) {
+      if (isNaN(this.targetPage) || this.targetPage > this.pageCount || this.targetPage < 1 || this.targetPage > this.maxPage) {
         this.$emit('current-change', 1);
       } else {
         this.$emit('current-change', Number(this.targetPage));
