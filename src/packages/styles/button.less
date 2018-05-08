@@ -1,6 +1,96 @@
-
 .yg-button {
-  width: 100px;
+  display: inline-block;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  transition: all .2s;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.yg-button--medium {
+  min-width: 88px;
   height: 40px;
-  background: @color;
+  line-height: 40px;
+  font-size: 16px;
+  padding: 0 20px;
+}
+
+.yg-button--small {
+  min-width: 72px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  padding: 0 16px;
+}
+
+.yg-button--mini {
+  min-width: 56px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  padding: 0 12px;
+}
+
+.yg-button--default {
+  background: #fff;
+  border-color: @brand-primary;
+  color: @brand-primary;
+}
+
+.yg-button--default:hover {
+  background: #effaf2;
+}
+
+.yg-button--primary {
+  background: @brand-primary;
+  border-color: @brand-primary;
+  color: #fff;
+}
+
+.yg-button--primary:hover {
+  background: #2cd771;
+}
+
+.yg-button--secondary {
+  background: #ff7e19;
+  border-color: #ff7e19;
+  color: #fff;
+}
+
+.yg-button--secondary:hover {
+  background: #ff931a;
+}
+
+.yg-button--normal {
+  background: #f6f6f6;
+  border-color: #e6e6e6;
+  color: #656565;
+}
+
+.yg-button--normal:hover {
+  background: #f0f0f0;
+}
+
+.yg-button--warning {
+  background: #ff3356;
+  border-color: #ff3356;
+  color: #fff;
+}
+
+.yg-button--warning:hover {
+  background: #e62d4c;
+}
+
+.yg-button.is-disabled {
+  background: #f5f5f5;
+  border-color: #e5e5e5;
+  color: #cdcdcd;
+  cursor: no-drop;
 }
