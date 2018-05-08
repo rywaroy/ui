@@ -3,6 +3,7 @@ import Pagination from './Pagination/index';
 import Radio from './Radio/index';
 import Checkbox from './Checkbox/index';
 import CheckboxGroup from './CheckBoxGroup/index';
+import Input from './Input/index';
 
 const components = [
   Button,
@@ -10,6 +11,7 @@ const components = [
   Radio,
   Checkbox,
   CheckboxGroup,
+  Input,
 ];
 
 const install = function install(Vue) {
@@ -29,4 +31,5 @@ export default {
   Radio,
   Checkbox,
   CheckboxGroup,
+  Input,
 };
