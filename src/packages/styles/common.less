@@ -1,4 +1,4 @@
-@color:#000;
+
 // 品牌色
 @brand-primary: #14c75e;
 
@@ -22,124 +22,10 @@
 
 @gray-lighter: lighten(@gray-base, 80%);  // #ccc;
 
-/*
- * Title: 字体
- * Description: 字体、字号、字体颜色
- *
- */
-// 字体
-@font-family-sans-serif: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
-
-@font-family-serif: Georgia, "Times New Roman", Times, serif;
-
-@font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
-
-@font-family-base: @font-family-sans-serif;
-// 字号
-@font-size-base: 14px;
-
-@font-size-large: ceil((@font-size-base * 1.25));  // 18px
-
-@font-size-small: ceil((@font-size-base * 0.85));  // 12px
-// 字体颜色
-@text-color: @gray;
-
-/*
- * 栅格系统
- *
- */
-@container-width: 1200px;
-
-/*
- * Tittle: Iconfont
- * Description: 字体路径、字体名称、SVG ID
- *
- */
-@icon-font-path: "../fonts/";
-
-@icon-font-name: "Icon-YGXT";
-
-@icon-font-svg-id: "Icon-YGXT";
-
-/*
- * Tittle: scaffolding
- *
- */
-// body
-@body-bg: #f5f5f5;
-// line-height
-@line-height-base: 1.5;
-// link
-@link-color: @gray;
-
-@link-hover-color: @brand-primary;
-
-@link-hover-decoration: underline;
-// h1-h6
-@font-size-h1: floor((@font-size-base * 2.6));
-
-@font-size-h2: floor((@font-size-base * 2.15));
-
-@font-size-h3: ceil((@font-size-base * 1.7));
-
-@font-size-h4: ceil((@font-size-base * 1.25));
-
-@font-size-h5: @font-size-base;
-
-@font-size-h6: ceil((@font-size-base * 0.85));
-
-@headings-font-family: inherit;
-
-@headings-font-weight: 500;
-
-@headings-line-height: 1.1;
-
-@headings-color: inherit;
-// hr border color.
-@hr-border: @gray-lighter;
-
-/*
- * Title: z-index 列表
- *
- */
 @zindex-navbar: 1000;
-
 @zindex-dropdown: 1000;
-
 @zindex-popover: 1060;
-
 @zindex-tooltip: 1070;
-
 @zindex-navbar-fixed: 1030;
-
 @zindex-modal-background: 1040;
-
 @zindex-modal: 1050;
-
-/*
- * Title: 组件
- * Description: 组件抽象（其实这些配置，可以写到各个组件中去，不需要写在这里）
- */
-// autocomplete
-// button
-// calendar
-// crumb
-// datepick
-// dialog
-// form
-// imgpreview
-// input
-// mask
-// middlepage
-// page
-// search-box
-// select
-// sort
-// tab
-// table
-// tipbox
-// tippop
-// tips
-// tiptext
-// title
-// totop

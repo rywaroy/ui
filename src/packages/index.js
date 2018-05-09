@@ -4,6 +4,7 @@ import Radio from './Radio/index';
 import Checkbox from './Checkbox/index';
 import CheckboxGroup from './CheckBoxGroup/index';
 import Input from './Input/index';
+import Dialog from './Dialog/index';
 
 const components = [
   Button,
@@ -12,6 +13,7 @@ const components = [
   Checkbox,
   CheckboxGroup,
   Input,
+  Dialog,
 ];
 
 const install = function install(Vue) {
@@ -32,4 +34,5 @@ export default {
   Checkbox,
   CheckboxGroup,
   Input,
+  Dialog,
 };

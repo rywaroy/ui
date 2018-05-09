@@ -9,7 +9,7 @@
         <li class="nav-item"><router-link :to="{name:'message'}">Message 消息提示</router-link></li>
         <li class="nav-item"><router-link :to="{name:'pagination'}">Pagination 分页</router-link></li>
         <li class="nav-item"><router-link :to="{name:'radio'}">Radio 单选框</router-link></li>
-        <li class="nav-item"><router-link :to="{name:'select'}">Select 选择器</router-link></li>
+        <li class="nav-item"><router-link :to="{name:'dialog'}">Dialog 弹窗</router-link></li>
         <li class="nav-item"><router-link :to="{name:'switch'}">Switch 开关</router-link></li>
       </ul>
     </div>

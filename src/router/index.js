@@ -10,6 +10,7 @@ import Pagination from '@/pages/Pagination.vue';
 import Radio from '@/pages/Radio.vue';
 import Select from '@/pages/Select.vue';
 import Switch from '@/pages/Switch.vue';
+import Dialog from '@/pages/Dialog.vue';
 
 Vue.use(Router);
 
@@ -64,6 +65,11 @@ export default new Router({
           path: '/switch',
           name: 'switch',
           component: Switch,
+        },
+        {
+          path: '/dialog',
+          name: 'dialog',
+          component: Dialog,
         },
       ],
     },
