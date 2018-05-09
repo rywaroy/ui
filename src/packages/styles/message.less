@@ -1,0 +1,104 @@
+.yg-message {
+  width: 480px;
+  padding: 10px 28px 10px 14px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid #ebeef5;
+  position: fixed;
+  left: 50%;
+  top: 20px;
+  z-index: 1051;
+  transform: translateX(-50%);
+  background-color: #edf2fc;
+  transition: opacity .3s, transform .4s;
+  overflow: hidden;
+}
+
+.yg-message--info {
+  background: #f4f9ff;
+  border: 1px solid #cfe2ff;
+  color: #3286ff;
+}
+
+.yg-message--success {
+  background: #f6feef;
+  border: 1px solid #ccefab;
+  color: #73cc1c;
+}
+
+.yg-message--warning {
+  background: #fff7f0;
+  border: 1px solid #ff9048;
+  color: #fe7e1b;
+}
+
+.yg-message--error {
+  background: #fff5f6;
+  border: 1px solid #ffccd5;
+  color: #fe3255;
+}
+
+.yg-message__content::after {
+  content: "\200B";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.yg-message__message {
+  float: left;
+  font-size: 12px;
+  line-height: 16px;
+  width: 400px;
+  font-weight: bold;
+}
+
+.yg-message__message--large {
+  float: left;
+  width: 380px;
+}
+
+.yg-message__close {
+  position: absolute;
+  right: 8px;
+  top: 12px;
+  width: 12px;
+  height: 12px;
+  background: #000;
+  cursor: pointer;
+}
+
+.yg-message__icon {
+  float: left;
+  margin-right: 12px;
+  width: 16px;
+  height: 16px;
+  background: #000;
+}
+
+.yg-message__icon--large {
+  float: left;
+  margin-right: 16px;
+  margin-left: 5px;
+  width: 24px;
+  height: 24px;
+  background: #000;
+}
+
+.yg-message__title {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.yg-message__text {
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 7px;
+}
+
+.yg-message-fade-enter,
+.yg-message-fade-leave-active {
+  opacity: 0;
+  transform: translate(-50%, -100%);
+}
