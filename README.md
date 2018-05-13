@@ -29,3 +29,7 @@ npm run build:style
 * [pagination](./src/packages/Pagination)
 * [radio](./src/packages/Radio)
 * [checkbox](./src/packages/Checkbox)
+* [button](./src/packages/Button)
+* [input](./src/packages/Input)
+* [dialog](./src/packages/Dialog)
+* [message](./src/packages/Message)
