@@ -19,3 +19,7 @@
   text-overflow: ellipsis;
   font-weight: 400;
 }
+
+.nav-item a.router-link-exact-active {
+  color: #2cd673;
+}
