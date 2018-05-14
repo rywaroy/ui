@@ -49,6 +49,9 @@ module.exports = {
     'no-plusplus': 0,
     'vue/no-side-effects-in-computed-properties': 'off',
     'no-underscore-dangle': 0,
-    'no-else-return': 0
+    'no-else-return': 0,
+    'arrow-parens': 0,
+    'func-names': 0,
+    'no-param-reassign': 0
   }
 }
