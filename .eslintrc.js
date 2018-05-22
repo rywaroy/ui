@@ -52,6 +52,9 @@ module.exports = {
     'no-else-return': 0,
     'arrow-parens': 0,
     'func-names': 0,
-    'no-param-reassign': 0
+    'no-param-reassign': 0,
+    'no-shadow': 0,
+    'prefer-rest-params': 0,
+    'no-unused-expressions': 0,
   }
 }
