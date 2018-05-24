@@ -40,6 +40,29 @@ Vue.use(YgUI);
 import { Button } from 'ygxt-yg-ui';
 ```
 
+### 按需加载
+
+下载 `babel-plugin-component`
+
+```
+cnpm i babel-plugin-component -D
+```
+
+修改 `.babelrc` 文件， 添加 `babel-plugin-component`
+
+```js
+{
+  "plugins": [
+    [
+      "component",
+      {
+        "libraryName": "ygxt-yg-ui"
+      }
+    ]
+  ]
+}
+```
+
 ## 组件
 
 * [pagination](./src/packages/Pagination)
