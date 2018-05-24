@@ -30,7 +30,7 @@ npm run build:style
 
 ```js
 import YgUI from 'ygxt-yg-ui';
-import 'ygxt-yg-ui/lib/static/css/app.css';
+import 'ygxt-yg-ui/lib/styles/ygui.css';
 
 Vue.use(YgUI);
 ```
