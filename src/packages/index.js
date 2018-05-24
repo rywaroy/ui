@@ -45,3 +45,14 @@ export default {
   Dialog,
   Message,
 };
+
+export {
+  Button,
+  Pagination,
+  Radio,
+  Checkbox,
+  CheckboxGroup,
+  Input,
+  Dialog,
+  Message,
+};
