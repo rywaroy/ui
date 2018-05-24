@@ -24,6 +24,22 @@ npm run build:comp
 npm run build:style
 ```
 
+## 引用
+
+### 全局引用
+
+```js
+import YgUI from 'ygxt-yg-ui';
+import 'ygxt-yg-ui/lib/static/css/app.css';
+
+Vue.use(YgUI);
+```
+### 单个组件引用
+
+```js
+import { Button } from 'ygxt-yg-ui';
+```
+
 ## 组件
 
 * [pagination](./src/packages/Pagination)
