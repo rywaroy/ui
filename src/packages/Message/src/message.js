@@ -3,19 +3,19 @@ import Main from './Message.vue';
 
 const MessageConstructor = Vue.extend(Main);
 let instance;
-let instances = [];
+const instances = [];
 let seed = 1;
 
 const Message = function (options) {
   options = options || {};
-  if (typeof options === 'string') { 
+  if (typeof options === 'string') {
     options = {
-      message: options
+      message: options,
     };
   }
-  let id = 'message_' + seed++;
+  const id = `message_${seed++}`;
   instance = new MessageConstructor({
-    data: options
+    data: options,
   });
   instance.id = id;
   instance.vm = instance.$mount();
@@ -29,7 +29,7 @@ const Message = function (options) {
   Message[type] = options => {
     if (typeof options === 'string') {
       options = {
-        message: options
+        message: options,
       };
     }
     options.type = type;
