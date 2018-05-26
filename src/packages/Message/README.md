@@ -10,6 +10,7 @@
 | duration | 显示时间, 毫秒。设为 0 则不会自动关闭 | number | 3000 |
 | showClose | 是否显示关闭按钮 | Boolean | false |
 | title | 提示标题 | String | 无 |
+
 ### Button Events
 
 | 事件名称 | 说明 | 回调参数 |
